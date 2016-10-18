@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Portfolio</title>
-    <%= csrf_meta_tags %>
+<head>
+	<title>Mindaugas Bernotas - Part Designer, Part Developer</title>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"  type="text/css"> 
 
-  <body>
-    <%= yield %>
-  </body>
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+	  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	  <%= csrf_meta_tags %>
+</head>
+<body>
+	<header id="main_navigation" class="clearfix">
+		<a href="#" class="name">Mindaugas Bernotas</a>
+		<nav>
+			<%= link_to "Articles", posts_path %>
+			<a href="#" >Projects</a>
+			<a href="#" >Contact</a>	
+		</nav>
+	</header>
+
+	<%= yield %>
+
+</body>
 </html>
