@@ -27,6 +27,7 @@ gem 'redcarpet', '~> 3.3', '>= 3.3.4'
 gem 'friendly_id', '~> 5.1'
 gem 'will_paginate', '~> 3.1'
 gem 'mail_form'
+gem 'devise', '~> 4.2'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
