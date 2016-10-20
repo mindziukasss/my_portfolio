@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Mindaugas Bernotas - Part Designer, Part Developer</title>
+	<title>Mindaugas Bernotas - Developer</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"  type="text/css"> 
 
@@ -12,7 +12,10 @@
 </head>
 <body>
 	<header id="main_navigation" class="clearfix">
-		<%= link_to "Mindaugas Bernotas", root_path, class: "name" %>
+		<%= link_to root_path, class: "name" do %>
+		<%= "Mindaugas Bernotas" %>
+			<%= image_tag "mb1.png", class: "logo" %>
+		<% end %>
 		<nav>
 			<%= link_to "Articles", posts_path %>
 			<%= link_to "Projects", projects_path %>

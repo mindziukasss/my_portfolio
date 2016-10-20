@@ -1,11 +1,14 @@
 <div class="wrapper wrapper_padding clearfix">
 	<div class="col-1 about homepage_content">
-		<h2>About</h2>
+		<h2><%= link_to "About me", welcome_path %></h2>
 	<hr>
-		<p>Banh mi bespoke food truck, chartreuse put a bird on it +1 .</p> <p>Plaid kogi disrupt actually beard, seitan skateboard cred chartreuse bitters vegan asymmetrical tacos.</p> <p>Man bun artisan drinking vinegar paleo viral pug semiotics, wolf cardigan art party umami. </p> <p>Chia banjo bitters viral williamsburg</p>
+
+		<p>Banh mi bespoke food truck, chartreuse put a bird on it +1 .</p> <p>Plaid kogi disrupt actually beard, seitan skateboard cred chartreuse bitters vegan asymmetrical tacos.</p> <p>Man bun artisan drinking vinegar paleo viral pug semiotics, wolf cardigan art party umami. </p>
+		<p>Chia banjo bitters viral williamsburg ....<%= link_to " more", welcome_path %></p>
 	</div>
 	<div class="col-2 homepage_content">
-		<h2>Stuff I've Written</h2>
+
+		<h2><%= link_to "Stuff I've Written", posts_path %></h2>
 	<hr>
 	<% @posts.each do |post| %>
 		<h3><a href = "#"><%= link_to post.title, post %></a></h3>
@@ -14,7 +17,7 @@
 	
 </div>
 	<div class="col-3 homepage_content">
-		<h2>Stuff I've Built</h2>
+		<h2><%= link_to "Stuff I've Built", projects_path %></h2>
 	<hr>
 
 		<% @projects.each do |project| %>

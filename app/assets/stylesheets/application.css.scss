@@ -125,6 +125,11 @@ hr {
 		text-decoration: none;
 		color: $dark;
 		float: left;
+		text-decoration: underline;
+	}
+
+	.logo {
+		margin: -0.9em;
 	}
 
 	nav {
